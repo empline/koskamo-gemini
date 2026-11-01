@@ -1,0 +1,10 @@
+{
+  "name": "koskamo",
+  "version": "1.0.0",
+  "description": "Discover MCP servers and packages with cited capabilities, provenance, and reference facts.",
+  "mcpServers": {
+    "koskamo": {
+      "httpUrl": "https://koskamo.com/api/mcp"
+    }
+  }
+}
