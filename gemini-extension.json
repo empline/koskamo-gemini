@@ -1,10 +1,20 @@
 {
   "name": "koskamo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discover MCP servers and packages with cited capabilities, provenance, and reference facts.",
   "mcpServers": {
     "koskamo": {
-      "httpUrl": "https://koskamo.com/api/mcp"
+      "httpUrl": "https://koskamo.com/api/mcp",
+      "includeTools": [
+        "koskamo_retrieve",
+        "koskamo_list_datasets",
+        "koskamo_get_history",
+        "koskamo_list_revisions",
+        "koskamo_find_mcp_server",
+        "koskamo_get_mcp_server",
+        "koskamo_register_mcp_server",
+        "koskamo_report_fact"
+      ]
     }
   }
 }

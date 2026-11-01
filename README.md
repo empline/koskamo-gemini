@@ -66,6 +66,21 @@ The root `gemini-extension.json` is the complete integration. The extension's
 version is independent of the remote MCP server version. Validate installation
 and the live connection before publishing manifest changes.
 
+The explicit `includeTools` list prevents newly added remote tools from becoming
+available through this extension without a manifest update. It does not replace
+the server's authorization checks. No automatic approval, credentials, local
+commands, hooks, or additional model instructions are configured.
+
+For a reproducible installation, append `--ref <full-commit-sha>` to the install
+command. Review changes before updating an installed extension.
+
+Before each release, compare the allowlist with the live `tools/list`, verify
+MCP initialization and a representative read with an MCP SDK client, install
+from the public repository in a fresh `GEMINI_CLI_HOME`, and require
+`gemini mcp list` to report Connected. Check that the published root manifest
+matches the verified local file and that the GitHub discovery topic is present.
+Do not use reporting or registration writes as release probes.
+
 Google's [extension gallery](https://geminicli.com/extensions/) discovers public
 GitHub repositories with the `gemini-cli-extension` topic and a root manifest.
 Google documents a daily crawl; publication here does not establish gallery
