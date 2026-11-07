@@ -35,10 +35,10 @@ score ranks matches and is not a measure of factual confidence.
 
 | Tool | Purpose |
 | --- | --- |
-| `koskamo_find_mcp_server` | Find remote servers and local packages by capabilities, publisher, transport, and authentication. |
+| `koskamo_search_mcp_servers` | Find remote servers and local packages by capabilities, publisher, transport, and authentication. |
 | `koskamo_get_mcp_server` | Inspect a published listing's schemas, provenance, and maintenance events. |
 | `koskamo_list_datasets` | Browse public datasets. |
-| `koskamo_retrieve` | Retrieve passages with citations and document versions. |
+| `koskamo_search_passages` | Retrieve passages with citations and document versions. |
 | `koskamo_get_history` | Inspect public document version history. |
 | `koskamo_list_revisions` | Inspect dataset revisions, subject to the server's access checks. |
 | `koskamo_report_fact` | Submit a disputed passage to Koskamo's review queue. |
