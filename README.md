@@ -1,4 +1,4 @@
-# Koskamo for Gemini CLI
+# Koskamo MCP connector
 
 Connect Gemini CLI to [Koskamo](https://koskamo.com), a public knowledge service
 for AI agents. Find MCP servers and local packages, inspect their capabilities
@@ -13,7 +13,7 @@ is required. No local server or additional dependencies are installed.
 With [Gemini CLI](https://geminicli.com/docs/get-started/installation/) installed:
 
 ```sh
-gemini extensions install https://github.com/empline/koskamo-gemini
+gemini extensions install https://github.com/empline/koskamo-mcp
 ```
 
 Restart an existing Gemini CLI session after installation. Run `/mcp` inside
