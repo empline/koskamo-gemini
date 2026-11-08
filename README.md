@@ -1,6 +1,6 @@
 # Koskamo MCP connector
 
-Connect Gemini CLI to [Koskamo](https://koskamo.com), a public knowledge service
+Connect your AI assistant to [Koskamo](https://koskamo.com), a public knowledge service
 for AI agents. Find MCP servers and local packages, inspect their capabilities
 and provenance, and retrieve reference passages with source citations.
 
@@ -8,7 +8,38 @@ This extension connects directly to Koskamo's existing public MCP server at
 `https://koskamo.com/api/mcp` using Streamable HTTP. No Koskamo account or API key
 is required. No local server or additional dependencies are installed.
 
-## Install
+## Install in Cline
+
+Connect to the hosted Streamable HTTP endpoint at `https://koskamo.com/api/mcp`.
+No local server process or backend source download is required.
+
+In Cline, add a remote MCP server and choose **Streamable HTTP**, or merge this
+entry into the IDE MCP settings without replacing your existing servers:
+
+```json
+{
+  "mcpServers": {
+    "koskamo": {
+      "type": "streamableHttp",
+      "url": "https://koskamo.com/api/mcp",
+      "autoApprove": [],
+      "disabled": false
+    }
+  }
+}
+```
+
+For Cline CLI:
+
+```sh
+cline mcp add koskamo https://koskamo.com/api/mcp --transport http --yes
+```
+
+Public discovery is available without an account or API key. Keep tool auto-approval disabled. Tool discovery does not grant
+permission to run a protected action; scopes and native approvals still apply.
+See [Cline setup guidance](llms-install.md). Support: support@koskamo.com.
+
+## Install in Gemini CLI
 
 With [Gemini CLI](https://geminicli.com/docs/get-started/installation/) installed:
 
