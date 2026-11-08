@@ -1,6 +1,6 @@
 {
   "name": "koskamo",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Discover MCP servers and packages with cited capabilities, provenance, and reference facts.",
   "mcpServers": {
     "koskamo": {
@@ -13,7 +13,37 @@
         "koskamo_search_mcp_servers",
         "koskamo_get_mcp_server",
         "koskamo_register_mcp_server",
-        "koskamo_report_fact"
+        "koskamo_update_mcp_server",
+        "koskamo_get_mcp_server_status",
+        "koskamo_update_mcp_server_visibility",
+        "koskamo_create_mcp_server_key",
+        "koskamo_revoke_mcp_server_key",
+        "koskamo_report_fact",
+        "koskamo_report_mcp_issue",
+        "koskamo_report_mcp_outcome",
+        "koskamo_get_mcp_issue_status",
+        "koskamo_list_mcp_directory_changes",
+        "koskamo_reopen_mcp_issue",
+        "koskamo_list_mcp_issues",
+        "koskamo_update_mcp_issue",
+        "koskamo_get_reference_schema",
+        "koskamo_query_reference",
+        "koskamo_search_use_cases",
+        "koskamo_get_use_case",
+        "koskamo_get_operation",
+        "koskamo_list_operations",
+        "koskamo_get_operation_result",
+        "koskamo_get_fact_report_status",
+        "koskamo_get_context",
+        "koskamo_get_capabilities",
+        "koskamo_get_connection_health",
+        "koskamo_get_task_plan",
+        "koskamo_get_readiness",
+        "koskamo_get_connection_plan",
+        "koskamo_list_documents",
+        "koskamo_get_document",
+        "koskamo_get_revision",
+        "koskamo_get_artifact"
       ]
     }
   }

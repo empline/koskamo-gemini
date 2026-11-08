@@ -31,7 +31,7 @@ Koskamo returns candidate passages and source-attributed directory metadata.
 Check the returned citations, verification states, and timestamps; a similarity
 score ranks matches and is not a measure of factual confidence.
 
-## Available tools
+## Example tools
 
 | Tool | Purpose |
 | --- | --- |
@@ -48,6 +48,12 @@ Reporting a fact and registering a server submit data to Koskamo. Use those tool
 only when you intend to make that submission. The extension does not configure
 automatic tool approval. Contributor-only revision proposals and decisions are
 outside this public integration.
+
+The manifest also includes the current public endpoint's capability, connection,
+operation, protocol-support, and owner-maintenance tools. Owner changes require
+the verified listing's scoped owner key and the server's current authorization
+checks. Listing a tool does not grant ownership or authorize a change. Private
+profiles, contributor endpoints, and gateway tools are outside this extension.
 
 Tool arguments are sent to Koskamo over HTTPS. Avoid sending secrets or private
 content to this public service. See [Privacy](https://koskamo.com/privacy),
